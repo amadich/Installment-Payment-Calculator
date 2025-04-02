@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Installment Payment Calculator</h2>
+        <label for="price">Price of the Product (TND):</label>
+        <input type="number" id="price" placeholder="Enter price in TND" />
+
+        <label for="interestRate">Annual Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate (%)" />
+
+        <label for="duration">Duration (in Years):</label>
+        <input type="number" id="duration" placeholder="Enter duration in years" value="3" />
+
+        <button onclick="calculateInstallment()">Calculate Monthly Installment</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
